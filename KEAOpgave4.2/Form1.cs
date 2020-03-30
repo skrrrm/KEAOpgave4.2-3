@@ -17,9 +17,12 @@ namespace KEAOpgave4._2
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Show casing while loop
+        /// </summary>
         private void buttonConfirm_Click(object sender, EventArgs e)
         {
-            listBoxResult.Items.Clear(); // clear the box on button click
+            listBoxWhile.Items.Clear(); // clear the box on button click
 
             // Variables
             int f = 2, i = 0, m;
@@ -41,7 +44,37 @@ namespace KEAOpgave4._2
                 m = f * i; 
 
                 v = $"f: {f,3}    i: {i,3}    m: {m,3}"; // string to write out
-                listBoxResult.Items.Add(v); // string added to listBox
+                listBoxWhile.Items.Add(v); // string added to listBox
+            }
+        }
+
+        /// <summary>
+        /// Show casing for loop
+        /// </summary>
+        private void buttonFor_Click(object sender, EventArgs e)
+        {
+            listBoxFor.Items.Clear(); // clear the box on button click
+
+            // Variables
+            int f = 2, m;
+            string v = "";
+
+            // try - catch for double
+            try
+            {
+                f = Convert.ToInt32(textBoxTableNum.Text);
+            }
+            catch
+            {
+                labelError.Text = "Numbers only."; // error text
+            }
+
+            for (int i = 0; i <= 10; i ++)
+            {
+                m = f * i;
+
+                v = $"f: {f,3}    i: {i,3}    m: {m,3}"; // string to write out
+                listBoxFor.Items.Add(v); // string added to listBox
             }
         }
     }
