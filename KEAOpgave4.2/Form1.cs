@@ -18,7 +18,7 @@ namespace KEAOpgave4._2
         }
 
         /// <summary>
-        /// Show casing while loop
+        /// Opgave 4.2 - Show casing while loop
         /// </summary>
         private void buttonConfirm_Click(object sender, EventArgs e)
         {
@@ -49,7 +49,7 @@ namespace KEAOpgave4._2
         }
 
         /// <summary>
-        /// Show casing for loop
+        /// Opgave 4.3 - Show casing for loop
         /// </summary>
         private void buttonFor_Click(object sender, EventArgs e)
         {
